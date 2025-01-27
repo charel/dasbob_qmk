@@ -3,7 +3,7 @@
 
 #pragma once
 
-#include "config_common.h"
+// #include "config_common.h"
 
 
 #define MATRIX_ROWS 8
@@ -66,9 +66,14 @@
 // Pick good defaults for enabling homerow modifiers
 // #define TAPPING_TERM 200
 #define PERMISSIVE_HOLD
-#define IGNORE_MOD_TAP_INTERRUPT
 #define TAPPING_FORCE_HOLD
 
 
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 500U
+
+
+//vial
+#define VIAL_KEYBOARD_UID {0x93, 0x27, 0x67, 0x55, 0xCD, 0x23, 0x9D, 0x0D}
+#define VIAL_UNLOCK_COMBO_ROWS { 0, 0 }
+#define VIAL_UNLOCK_COMBO_COLS { 0, 1 }
